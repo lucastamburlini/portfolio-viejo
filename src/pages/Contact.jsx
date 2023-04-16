@@ -68,7 +68,7 @@ const Contact = () => {
     >
       <div id="contact">
         <Form onSubmit={sendEmail} ref={form}>
-          <h2 className="container">Contacto</h2>
+          <h2 className="container title-form">Contacto</h2>
           <div className="container grid">
             <div className="item nombre">
               <label htmlFor="firstName">Nombre</label>
