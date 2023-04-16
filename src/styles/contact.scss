@@ -1,46 +1,69 @@
+@import "../styles/index.scss";
 
-#contact {
-  form {
+h2 {
+  margin-bottom: 25px;
+}
+
+form {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--color-primary);
+  background-color: var(--color-bg-offset);
+
+  .item {
+    padding: 5px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
 
-    .item {
-      display: flex;
-      flex-direction: column;
-      margin: 10px;
-
-      label {
-        font-size: 1rem;
-        margin-bottom: 5px;
-      }
-
-      input,
-      textarea {
-        padding: 10px;
-        font-size: 1rem;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-        min-width: 300px;
-
-        &:focus {
-          outline: none;
-          border-color: #00bcd4;
-          box-shadow: 0px 0px 5px #00bcd4;
-        }
-      }
-
-      .error-message {
-        color: red;
-        font-size: 0.8rem;
-        margin-top: 5px;
-      }
+    label {
+      margin-bottom: 5px;
     }
 
-    button[type="submit"] {
-      margin-top: 20px;
+    input,
+    textarea {
+      padding: 10px;
+      border: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 2px solid var(--color-primary);
+      outline: none;
+    }
+
+    .error-message {
+      color: var(--color-primary);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  form .item {
+    padding: 0;
+  }
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nombre apellido "
+      "email telefono "
+      "mensaje mensaje ";
+    .nombre {
+      grid-area: nombre;
+    }
+    .apellido {
+      grid-area: apellido;
+    }
+    .email {
+      grid-area: email;
+    }
+    .telefono {
+      grid-area: telefono;
+    }
+    .mensaje {
+      grid-area: mensaje;
     }
   }
 }

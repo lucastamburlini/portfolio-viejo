@@ -17,7 +17,7 @@ footer {
   .icons {
     display: flex;
     a {
-      margin: 0 10px;
+     padding: 6px;
       color: var(--color-text);
       & :hover {
         color: var(--color-primary);

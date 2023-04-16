@@ -5,7 +5,13 @@ import emailjs from "@emailjs/browser";
 import Button from "../components/Button";
 import "../styles/contact.scss";
 
-const FormContact = () => {
+const CustomErrorMessage = ({ children, ...props }) => (
+  <div className="error-message" {...props}>
+    * {children}
+  </div>
+);
+
+const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -51,7 +57,7 @@ const FormContact = () => {
         message: yup
           .string()
           .max(15, "Debe dejar un mensaje")
-          .required("Debe dejar un mensaje"),
+          .required("Debes dejar un mensaje"),
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -62,38 +68,39 @@ const FormContact = () => {
     >
       <div id="contact">
         <Form onSubmit={sendEmail} ref={form}>
-          <div>
-            <div>
-              <div className="item">
-                <label htmlFor="firstName">Nombre</label>
-                <Field name="firstName" type="text" />
-                <ErrorMessage name="firstName" />
-              </div>
-              <div className="item">
-                <label htmlFor="lastName">Apellido</label>
-                <Field name="lastName" type="text" />
-                <ErrorMessage name="lastName" />
-              </div>
-              <div className="item">
-                <label htmlFor="email">Email</label>
-                <Field name="email" type="email" />
-                <ErrorMessage name="email" />
-              </div>
-              <div className="item">
-                <label htmlFor="phoneNumber">Teléfono</label>
-                <Field name="phoneNumber" type="phoneNumber" />
-              </div>
-              <div className="item">
-                <label htmlFor="message">Mensaje</label>
-                <Field name="message" as="textarea" />
-                <ErrorMessage name="message" />
-              </div>
+          <h2 className="container">Contacto</h2>
+          <div className="container grid">
+            <div className="item nombre">
+              <label htmlFor="firstName">Nombre</label>
+              <Field name="firstName" type="text" />
+              <ErrorMessage name="firstName" component={CustomErrorMessage} />
             </div>
-            <Button>Enviar</Button>
+            <div className="item apellido">
+              <label htmlFor="lastName">Apellido</label>
+              <Field name="lastName" type="text" />
+              <ErrorMessage name="lastName" component={CustomErrorMessage} />
+            </div>
+            <div className="item email">
+              <label htmlFor="email">Email</label>
+              <Field name="email" type="email" />
+              <ErrorMessage name="email" component={CustomErrorMessage} />
+            </div>
+            <div className="item telefono">
+              <label htmlFor="phoneNumber">Teléfono</label>
+              <Field name="phoneNumber" type="phoneNumber" />
+            </div>
+            <div className="item mensaje">
+              <label htmlFor="message">Mensaje</label>
+              <Field name="message" as="textarea" />
+              <ErrorMessage name="message" component={CustomErrorMessage} />
+            </div>
+            <div>
+              <Button>Enviar</Button>
+            </div>
           </div>
         </Form>
       </div>
     </Formik>
   );
 };
-export default FormContact;
+export default Contact;
