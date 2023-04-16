@@ -19,7 +19,7 @@ const About = () => {
             {" "}
             Concepción del Uruguay, Entre Ríos, Argentina
           </a>
-          , y me gradué de la{" "}
+          , y me gradué en la{" "}
           <a
             href="https://www.ub.edu.ar/"
             target="_blank"
@@ -27,12 +27,12 @@ const About = () => {
           >
             Universidad de Belgrano
           </a>{" "}
-          como Analista Universitario en Gestión de Capital Humano en 2022.
+          de Analista Universitario en Gestión de Capital Humano en 2022.
         </p>{" "}
         <br />
         <p>
           Después de terminar la carrera, descubrí mi verdadera vocación como
-          programador y me recibí de Programar Web Full Stack en{" "}
+          programador y me recibí de Programador Web Full Stack en{" "}
           <a
             href="https://ar.academianumen.com/"
             target="_blank"
