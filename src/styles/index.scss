@@ -1,0 +1,55 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Configuración global */
+:root {
+  --font-family-base: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-family-display: Noe Display, Georgia, Times, serif;
+}
+
+/* Estilos para la etiqueta HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 576px) {
+    width: 60%;
+  }
+}
+
+/* Estilos para las etiquetas de encabezado */
+
+h1 {
+  margin-bottom: 16px;
+  font-family: var(--font-family-display);
+  text-rendering: optimizeLegibility;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.1875rem;
+}
+
+/* Estilos para el párrafo */
+p {
+  font-size: 1rem;
+}

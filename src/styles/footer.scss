@@ -1,0 +1,27 @@
+@import "../styles/index.scss";
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-bg-offset);
+  padding: 20px;
+
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-text);
+  }
+
+  .icons {
+    display: flex;
+    a {
+      margin: 0 10px;
+      color: var(--color-text);
+      & :hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

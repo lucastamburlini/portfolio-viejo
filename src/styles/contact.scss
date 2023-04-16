@@ -1,0 +1,47 @@
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    label {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    
+    input {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid gray;
+      width: 100%;
+      
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+    
+    button[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: #0069d9;
+      }
+    }
+    
+    /* Estilos para mensajes de error */
+    .error-message {
+      color: red;
+      margin-top: 0.5rem;
+    }
+  }
+  
