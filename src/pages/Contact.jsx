@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import Button from "../components/Button";
+import "../styles/contact.scss";
 
 const FormContact = () => {
   const form = useRef();
@@ -62,27 +63,27 @@ const FormContact = () => {
       <div id="contact">
         <Form onSubmit={sendEmail} ref={form}>
           <div>
-            <div className="item 1">
-              <div>
+            <div>
+              <div className="item">
                 <label htmlFor="firstName">Nombre</label>
                 <Field name="firstName" type="text" />
                 <ErrorMessage name="firstName" />
               </div>
-              <div className="item 2">
+              <div className="item">
                 <label htmlFor="lastName">Apellido</label>
                 <Field name="lastName" type="text" />
                 <ErrorMessage name="lastName" />
               </div>
-              <div className="item 3">
+              <div className="item">
                 <label htmlFor="email">Email</label>
                 <Field name="email" type="email" />
                 <ErrorMessage name="email" />
               </div>
-              <div className="item 4">
+              <div className="item">
                 <label htmlFor="phoneNumber">Teléfono</label>
                 <Field name="phoneNumber" type="phoneNumber" />
               </div>
-              <div className="item 5">
+              <div className="item">
                 <label htmlFor="message">Mensaje</label>
                 <Field name="message" as="textarea" />
                 <ErrorMessage name="message" />
