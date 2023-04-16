@@ -23,11 +23,14 @@ import { SiCanva, SiExpress, SiMui } from "react-icons/si";
 /* Imágenes de las instituciones */
 import imgUniBelgrano from "../assets/images/img-uni-belgrano.jpg";
 import imgAcaNumen from "../assets/images/img-academia-numen.jpg";
-
+import imgPMI from "../assets/images/pmi.jpg";
+import imgLinkedin from "../assets/images/linkedin.jpg";
 
 /* Imágenes de los certificados */
 import cerProWeb from "../assets/images/academia-certificado.jpg";
 import imgTitulo from "../assets/images/titulo-analista.jpg";
+import imgScrum from "../assets/images/pmi-certificado.png";
+import imgGH from "../assets/images/github.png";
 
 /* Imágenes proyectos */
 import img3 from "../assets/images/img3.jpg";
@@ -98,5 +101,26 @@ export const certificates = [
     institution: "Universidad de Belgrano",
     title: "Analista Universitario en Gestión de Capital Humano",
     imgTitle: imgTitulo,
+  },
+/*   {
+    id: 3,
+    imgInstitution: imgPMI,
+    institution: "Sonia Tobarda´s Institute",
+    title: "Inglés - Nivel Starter",
+    imgTitle: imgScrum,
+  }, */
+  {
+    id: 4,
+    imgInstitution: imgPMI,
+    institution: "Project Management Institute",
+    title: "Aprende SCRUM",
+    imgTitle: imgScrum,
+  },
+  {
+    id: 5,
+    imgInstitution: imgLinkedin,
+    institution: "LinkedIn",
+    title: "GitHub para Programadores",
+    imgTitle: imgGH,
   },
 ];
