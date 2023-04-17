@@ -25,12 +25,14 @@ import imgUniBelgrano from "../assets/images/img-uni-belgrano.jpg";
 import imgAcaNumen from "../assets/images/img-academia-numen.jpg";
 import imgPMI from "../assets/images/pmi.jpg";
 import imgLinkedin from "../assets/images/linkedin.jpg";
+import sti from "../assets/images/sti.png";
 
 /* Imágenes de los certificados */
 import cerProWeb from "../assets/images/academia-certificado.jpg";
 import imgTitulo from "../assets/images/titulo-analista.jpg";
 import imgScrum from "../assets/images/pmi-certificado.png";
 import imgGH from "../assets/images/github.png";
+import imgSti from "../assets/images/starters.jpg";
 
 /* Imágenes proyectos */
 import img3 from "../assets/images/img3.jpg";
@@ -102,25 +104,26 @@ export const certificates = [
     title: "Analista Universitario en Gestión de Capital Humano",
     imgTitle: imgTitulo,
   },
-/*   {
+  {
     id: 3,
-    imgInstitution: imgPMI,
+    imgInstitution: sti,
     institution: "Sonia Tobarda´s Institute",
     title: "Inglés - Nivel Starter",
-    imgTitle: imgScrum,
-  }, */
-  {
-    id: 4,
-    imgInstitution: imgPMI,
-    institution: "Project Management Institute",
-    title: "Aprende SCRUM",
-    imgTitle: imgScrum,
+    imgTitle: imgSti,
   },
   {
-    id: 5,
+    id: 4,
     imgInstitution: imgLinkedin,
     institution: "LinkedIn",
     title: "GitHub para Programadores",
     imgTitle: imgGH,
   },
+  {
+    id: 5,
+    imgInstitution: imgPMI,
+    institution: "Project Management Institute",
+    title: "Aprende SCRUM",
+    imgTitle: imgScrum,
+  },
+
 ];
