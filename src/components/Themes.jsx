@@ -1,68 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/themes.scss";
-
-const themes = [
-  {
-    name: "Light",
-    values: {
-      "--color-bg": "#ffffff",
-      "--color-bg-offset": "#dbdbe2",
-      "--color-text": "#373a3c",
-      "--color-text-offset": "#ffffff",
-      "--color-primary": "#0EA293",
-    },
-  },
-  {
-    name: "Dark",
-    values: {
-      "--color-bg": "#000000",
-      "--color-bg-offset": "#27292b",
-      "--color-text": "#ffffff",
-      "--color-text-offset": "#a9a9a9",
-      "--color-primary": "#3385ff",
-    },
-  },
-  {
-    name: "Blue",
-    values: {
-      "--color-bg": "#112D4E",
-      "--color-bg-offset": "#3F72AF",
-      "--color-text": "#F9F7F7",
-      "--color-text-offset": "#DBE2EF",
-      "--color-primary": "#FFEA20",
-    },
-  },
-  {
-    name: "Green",
-    values: {
-      "--color-bg": "#41644A",
-      "--color-bg-offset": "#263A29",
-      "--color-text": "#FFFBF5",
-      "--color-text-offset": "#FFFBF6",
-      "--color-primary": "#E86A33",
-    },
-  },
-  {
-    name: "Food",
-    values: {
-      "--color-bg": "#FFF5E4",
-      "--color-bg-offset": "#DEBA9D",
-      "--color-text": "#373a3c",
-      "--color-text-offset": "#F5E8C7",
-      "--color-primary": "#DE1B4A",
-    },
-  },
-  {
-    name: "Halloween",
-    values: {
-      "--color-bg": "#FFA559",
-      "--color-bg-offset": "#FF6000",
-      "--color-text": "#000000",
-      "--color-text-offset": "#D8D8D8",
-      "--color-primary": "#FBF7F0",
-    },
-  },
-];
+import { themes } from "../data/data";
 
 function ColorOption(props) {
   const { value } = props;
