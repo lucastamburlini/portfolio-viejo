@@ -6,7 +6,7 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--color-bg);
   height: auto;
@@ -124,7 +124,7 @@ nav {
   }
 
   .links a {
-    margin: 0px 20px;
+    margin-left: 35px;
     text-shadow: none;
   }
   .menu-button {

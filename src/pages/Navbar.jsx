@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import "../styles/navbar.scss";
@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div style={{ display: showThemes ? "block" : "none" }}>
         <Themes />
       </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
