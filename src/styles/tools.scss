@@ -1,39 +1,49 @@
 @import "./index.scss";
 
 .tools-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 2rem;
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
 
-
-  .tool-card {
+  .tool-skill-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-  }
+    width: auto;
+    height: auto;
+    gap: 20px;
+    margin: 0 0 70px 0;
 
-  .tool-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    background-color: var(--color-bg-offset);
-    margin-bottom: 20px;
+    .tool-items {
+      display: flex;
+      align-items: center;
+      background-color: var(--color-bg-offset);
+      padding: 8px 18px;
+      cursor: default;
 
-    &:hover{
-      background-color: var(--color-primary);
-      transition: all .3s ease;
-      color: var(--color-bg);
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-bg);
+        transition: all 0.2s ease-in-out;
+      }
+
+      .tool-icon {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: var(--color-bg);
+        }
+      }
+
+      .tool-name {
+        margin-left: 10px;
+      }
     }
   }
+}
 
-  .tool-icon svg {
-    width: 50%;
-    height: 50%;
+@media screen and (min-width: 576px) {
+  .tool-skill-container {
+
   }
 }
