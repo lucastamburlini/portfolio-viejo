@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/about.scss";
 import Button from "../../components/Button";
+import cv from "../../assets/cv.pdf";
 
 const About = () => {
   return (
@@ -72,12 +73,7 @@ const About = () => {
         </p>
       </div>
       <div>
-        <Button
-          onClick={() =>
-            (window.location.href =
-              "https://drive.google.com/uc?export=download&id=1K1C4cHo74w5pgQogRuomsSLBjTvTq6rt")
-          }
-        >
+        <Button onClick={() => window.open(`${cv}?download=true`)}>
           Descarga mi CV
         </Button>
       </div>

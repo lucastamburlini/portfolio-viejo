@@ -11,6 +11,7 @@ import {
   DiMongodb,
   DiPhotoshop,
   DiSass,
+  DiSenchatouch,
 } from "react-icons/di";
 import {
   TbBrandJavascript,
@@ -47,18 +48,33 @@ export const dataTabs = [
 ];
 
 export const tools = [
-  { name: "HTML", icon: <TbBrandHtml5 /> },
-  { name: "CSS", icon: <TbBrandCss3 /> },
-  { name: "JavaScript", icon: <TbBrandJavascript /> },
-  { name: "React", icon: <DiReact /> },
-  { name: "Node.js", icon: <DiNodejsSmall /> },
-  { name: "Express", icon: <SiExpress /> },
-  { name: "MongoDB", icon: <DiMongodb /> },
-  { name: "Photoshop", icon: <DiPhotoshop /> },
-  { name: "Canva", icon: <SiCanva /> },
-  { name: "Sass", icon: <DiSass /> },
-  { name: "Bootstrap", icon: <TbBrandBootstrap /> },
-  { name: "Material UI", icon: <SiMui /> },
+  {
+    category: "Front End",
+    items: [
+      { name: "HTML", icon: <TbBrandHtml5 /> },
+      { name: "CSS", icon: <TbBrandCss3 /> },
+      { name: "JavaScript", icon: <TbBrandJavascript /> },
+      { name: "React", icon: <DiReact /> },
+      { name: "Sass", icon: <DiSass /> },
+      { name: "Bootstrap", icon: <TbBrandBootstrap /> },
+      { name: "Material UI", icon: <SiMui /> },
+    ],
+  },
+  {
+    category: "Back End",
+    items: [
+      { name: "Node.js", icon: <DiNodejsSmall /> },
+      { name: "Express", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <DiMongodb /> },
+    ],
+  },
+  {
+    category: "Diseño",
+    items: [
+      { name: "Photoshop", icon: <DiPhotoshop /> },
+      { name: "Canva", icon: <SiCanva /> },
+    ],
+  },
 ];
 
 export const linksNavbar = [
@@ -125,10 +141,7 @@ export const certificates = [
     title: "Aprende SCRUM",
     imgTitle: imgScrum,
   },
-
 ];
-
-
 
 export const themes = [
   {
