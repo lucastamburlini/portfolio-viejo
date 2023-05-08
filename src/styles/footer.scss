@@ -2,25 +2,33 @@
 
 footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--color-bg-offset);
-  padding: 20px;
 
-  p {
+  .footer-container {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    color: var(--color-text);
-  }
+    justify-content: space-between;
+    padding: 20px 0;
 
-  .icons {
-    display: flex;
-    a {
-     padding: 6px;
+    p {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
       color: var(--color-text);
-      & :hover {
-        color: var(--color-primary);
+    }
+
+    .icons {
+      display: flex;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 15px ;
+        color: var(--color-text);
+        & :hover {
+          color: var(--color-primary);
+        }
       }
     }
   }
