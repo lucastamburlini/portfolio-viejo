@@ -5,6 +5,7 @@ import Main from "./pages/Main";
 import Navbar from "./pages/Navbar";
 import Contact from "./pages/Contact";
 import Banner from "./pages/Banner";
+import Codewars from "./pages/Codewars";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Banner />
         <Main />
+        <Codewars />
         <Contact />
         <Footer />
       </BrowserRouter>
