@@ -13,7 +13,6 @@ const Banner = () => {
         Siempre buscando nuevos desafíos para mejorar mis habilidades y crecer
         como profesional.
       </p>
-
     </div>
   );
 };

@@ -158,7 +158,7 @@ export const themes = [
     name: "Dark",
     values: {
       "--color-bg": "#000000",
-      "--color-bg-offset": "#27292b",
+      "--color-bg-offset": "#303133",
       "--color-text": "#ffffff",
       "--color-text-offset": "#a9a9a9",
       "--color-primary": "#3385ff",
