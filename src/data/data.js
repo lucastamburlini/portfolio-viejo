@@ -37,6 +37,7 @@ import imgSti from "../assets/images/starters.jpg";
 
 /* Imágenes proyectos */
 import img3 from "../assets/images/img3.jpg";
+import taskManager from "../assets/images/task-manager.jpg"
 
 /* ------------------------------------ */
 /* Datos */
@@ -102,6 +103,13 @@ export const projects = [
     tech: "React, Sass",
     link: "https://fucking-beer.vercel.app/",
     backgroundImage: img3,
+  },
+  {
+    id: 2,
+    title: "Task Manager",
+    tech: "Java Script, CSS, HTML",
+    link: "https://task-manager-one-ochre.vercel.app/",
+    backgroundImage: taskManager,
   },
 ];
 
