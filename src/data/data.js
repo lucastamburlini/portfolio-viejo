@@ -101,14 +101,14 @@ export const projects = [
     title: "Rebeer",
     tech: "React, Sass",
     link: "https://fucking-beer.vercel.app/",
-    backgroundImage: rebeer,
+    backgroundImage: `url(${rebeer})`,
   },
   {
     id: 2,
     title: "Task Manager",
     tech: "Java Script, CSS, HTML",
     link: "https://task-manager-one-ochre.vercel.app/",
-    backgroundImage: taskManager,
+    backgroundImage: `url(${taskManager})`,
   },
 ];
 
