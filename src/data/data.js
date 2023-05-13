@@ -11,7 +11,6 @@ import {
   DiMongodb,
   DiPhotoshop,
   DiSass,
-  DiSenchatouch,
 } from "react-icons/di";
 import {
   TbBrandJavascript,
@@ -36,8 +35,8 @@ import imgGH from "../assets/images/github.png";
 import imgSti from "../assets/images/starters.jpg";
 
 /* Imágenes proyectos */
-import img3 from "../assets/images/img3.jpg";
-import taskManager from "../assets/images/task-manager.jpg"
+import rebeer from "../assets/images/rebeer.jpg";
+import taskManager from "../assets/images/task-manager.jpg";
 
 /* ------------------------------------ */
 /* Datos */
@@ -102,14 +101,14 @@ export const projects = [
     title: "Rebeer",
     tech: "React, Sass",
     link: "https://fucking-beer.vercel.app/",
-    backgroundImage: img3,
+    backgroundImage: `url(${rebeer})`,
   },
   {
     id: 2,
     title: "Task Manager",
     tech: "Java Script, CSS, HTML",
     link: "https://task-manager-one-ochre.vercel.app/",
-    backgroundImage: taskManager,
+    backgroundImage: `url(${taskManager})`,
   },
 ];
 
@@ -169,7 +168,7 @@ export const themes = [
       "--color-bg-offset": "#303133",
       "--color-text": "#ffffff",
       "--color-text-offset": "#a9a9a9",
-      "--color-primary": "#3385ff",
+      "--color-primary": "#0002A1",
     },
   },
   {

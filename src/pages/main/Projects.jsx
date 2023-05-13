@@ -8,7 +8,17 @@ const Projects = () => {
   return (
     <section className="projects-container" id="projects">
       {projects.map((project) => (
-        <div key={project.id} className="card">
+        <div
+          key={project.id}
+          className="card"
+          style={{
+            backgroundImage: project.backgroundImage,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.9,
+          }}
+        >
           <div className="card-content">
             <h2 className="card-title">{project.title}</h2>
             <Button onClick={() => window.open(project.link, "_blank")}>
