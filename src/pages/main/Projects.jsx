@@ -16,6 +16,7 @@ const Projects = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            opacity: 0.9,
           }}
         >
           <div className="card-content">

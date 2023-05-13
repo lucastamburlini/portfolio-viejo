@@ -168,7 +168,7 @@ export const themes = [
       "--color-bg-offset": "#303133",
       "--color-text": "#ffffff",
       "--color-text-offset": "#a9a9a9",
-      "--color-primary": "#3385ff",
+      "--color-primary": "#0002A1",
     },
   },
   {
